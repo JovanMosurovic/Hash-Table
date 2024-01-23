@@ -18,8 +18,38 @@ This codebase encompasses the implementation of a hash table data structure feat
   - [Menu Options](#menu-options)
 - [File Format](#file-format)
 
+## Features
+By the given instructions, next functions are implemented:
 
+- ```findKey(Key k)```
 
+### 1. Hash Table Operations
+
+- **Insertion:** Add a key-value pair to the hash table.
+- **Deletion:** Remove a key-value pair from the hash table.
+- **Search:** Find a key in the hash table and retrieve its associated value.
+
+| Function | Description |
+|---|---|
+| `findKey(Key k)` | Finds the given key and returns a pointer to the corresponding string (0 if the key is not found in the table). |
+| `insertKey(Key k, string s)` | Inserts a key and its accompanying information into the table and returns the status (true for successful insertion, false for unsuccessful insertion). Prevents insertion of an existing key. |
+| `deleteKey(Key k)` | Deletes a key from the table and returns the success status (true for successful deletion, false for unsuccessful deletion). |
+| `avgAccessSuccess()` | Returns the average number of table accesses when successfully searching for keys. |
+| `avgAccessUnsuccess()` | Returns the average number of table accesses when unsuccessfully searching for a key, calculated based on the number (up to that point) of unsuccessful table accesses and the number of keys not found in the table. |
+| `resetStatistics()` | Sets all data needed for counting accesses for determining the average number of accesses for unsuccessful key search to the initial value. |
+| `clear()` | Empties the table (deletes all keys). |
+| `keyCount()` | Returns the number of inserted keys. |
+| `tableSize()` | Returns the size of the table. |
+| `operator<<` | Prints the contents of the table to the standard output, one table entry per line. Empty table entries should be marked with "EMPTY". |
+| `fillRatio()` | Returns the degree of table fullness (real number between 0 and 1). |
+
+## Adaptive Hash Table
+The hash table has an adaptive mode, controlled by the user. When in adaptive mode, the table automatically adjusts its size based on load factors and average access counts. You can enable/disable this option through the menu. The initial mode of the table is not adaptive due to the homework requirement from the faculty.
+
+## Performance Evaluation
+Performance evaluation of a hash table is performed by inserting given keys (in a specified range of values) into a given hash table, and then generating a specified number of keys of **pseudorandom** values and performing a search on them. After that, the results (average number of accesses in a **successful** search and calculated number of accesses in an **unsuccessful** search) are printed.<br />
+
+The range in which random numbers are generated is determined so that it corresponds to the range of values of the keys inserted into the table (in this case these numbers are between minimum and maximum key in "[DZ3_Recnik_10K.txt](Files/DZ3_Recnik_10K.txt)" file.
 
 ## File format
 When creating new test files, the format should be as follows:
@@ -31,5 +61,5 @@ When creating new test files, the format should be as follows:
 * **key** is of type *long int*
 
 ## Files
-This project includes 3 examples (test files), filenames [`test.txt`](Files/test.txt), [`test100.txt`](Files/test100.txt) and [`DZ3_Recnik_10K.txt.txt`](Files/DZ3_Recnik_10K.txt.txt).
+This project includes 3 examples (test files), named [`test.txt`](Files/test.txt), [`test100.txt`](Files/test100.txt) and [`DZ3_Recnik_10K.txt.txt`](Files/DZ3_Recnik_10Ktxt).
  <br />
