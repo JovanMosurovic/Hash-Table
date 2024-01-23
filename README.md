@@ -19,15 +19,10 @@ This codebase encompasses the implementation of a hash table data structure feat
 - [File Format](#file-format)
 
 ## Features
+
+### Hash Table Operations
+
 By the given instructions, next functions are implemented:
-
-- ```findKey(Key k)```
-
-### 1. Hash Table Operations
-
-- **Insertion:** Add a key-value pair to the hash table.
-- **Deletion:** Remove a key-value pair from the hash table.
-- **Search:** Find a key in the hash table and retrieve its associated value.
 
 | Function | Description |
 |---|---|
