@@ -18,7 +18,6 @@ This codebase encompasses the implementation of a hash table data structure feat
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Usage](#usage)
-  - [Menu Options](#menu-options)
 - [File Format](#file-format)
 
 ## Features
@@ -49,6 +48,27 @@ Performance evaluation of a hash table is performed by inserting given keys (in 
 
 The range in which random numbers are generated is determined so that it corresponds to the range of values of the keys inserted into the table (in this case these numbers are between minimum and maximum key in "[DZ3_Recnik_10K.txt](Files/DZ3_Recnik_10K.txt)" file.
 
+## Getting Started
+
+### Prerequisites
+Before you begin, ensure you have the following prerequisites:
+
+- C++ Compiler: Make sure you have a C++ compiler installed on your system.
+- Ensure that your terminal supports ASCII escape codes to view the colorized and formatted output correctly.
+
+### Compilation and Execution
+
+1. Ensure you have a C++ compiler installed.
+2. Clone this repository.
+3. Navigate to the directory containing the source code.
+4. Compile the code.
+5. Run the compiled program.
+
+ ### Usage
+
+Upon execution, the program presents a menu with various options, as explained in [Features](#features) section, to interact with the user. Follow the on-screen prompts to perform operations.
+
+
 ## File format
 When creating new test files, the format should be as follows:
 ```
@@ -60,4 +80,5 @@ When creating new test files, the format should be as follows:
 
 ## Files
 This project includes 3 examples (test files), named [`test.txt`](Files/test.txt), [`test100.txt`](Files/test100.txt) and [`DZ3_Recnik_10K.txt.txt`](Files/DZ3_Recnik_10Ktxt) (main file given by faculty).
- <br />
+
+
