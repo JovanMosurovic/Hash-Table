@@ -12,6 +12,9 @@ This codebase encompasses the implementation of a hash table data structure feat
 ## Table of Contents
 
 - [Features](#features)
+  - [Hash Table Operations](#hash-table-operations)
+  - [Adaptive Hash Table](#adaptive-hash-table)
+  - [Performance Evaluation](#performance-evaluation)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Usage](#usage)
