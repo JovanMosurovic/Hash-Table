@@ -61,5 +61,5 @@ When creating new test files, the format should be as follows:
 * **key** is of type *long int*
 
 ## Files
-This project includes 3 examples (test files), named [`test.txt`](Files/test.txt), [`test100.txt`](Files/test100.txt) and [`DZ3_Recnik_10K.txt.txt`](Files/DZ3_Recnik_10Ktxt).
+This project includes 3 examples (test files), named [`test.txt`](Files/test.txt), [`test100.txt`](Files/test100.txt) and [`DZ3_Recnik_10K.txt.txt`](Files/DZ3_Recnik_10Ktxt) (main file given by faculty).
  <br />
