@@ -13,6 +13,7 @@ This codebase encompasses the implementation of a hash table data structure feat
 
 - [Features](#features)
   - [Hash Table Operations](#hash-table-operations)
+  - [Collision resolution](#collision-resolution)
   - [Adaptive Hash Table](#adaptive-hash-table)
   - [Performance Evaluation](#performance-evaluation)
 - [Getting Started](#getting-started)
@@ -40,6 +41,27 @@ By the given instructions, next functions are implemented:
 | `operator<<` | Prints the contents of the table to the standard output, one table entry per line. Empty table entries should be marked with "EMPTY". |
 | `fillRatio()` | Returns the degree of table fullness (real number between 0 and 1). |
 
+## Collision resolution
+The class representing the abstraction of the address function that the hash table will use for resolving collisions is specified to the hash table object during its creation.
+This abstract class defines the interface for the address function used by a hash table to resolve collisions. The hash table must provide an object of this class during its creation.
+
+```
+Address getAddress(Key k, Address a, Attempt i) 
+```
+
+Parameters:
+- `k`: The key.
+- `a`: The base address.
+- `i`: The attempt number of access.
+
+The method returns a new address where the key should be looked for (or the location where it is needed accommodate). The returned address **may be outside** the address range of the table. A hash table that uses this class should take care of it and reduce the returned address to the correct one range. Derived classes should specify how to determine the next address.
+
+### Double hashing Class
+The double hashing class is parameterized by the values of `p` and `q` and returns the following value:
+
+```
+return_address = a + i · (q + (k mod p))
+```
 ## Adaptive Hash Table
 The hash table has an adaptive mode, controlled by the user. When in adaptive mode, the table automatically adjusts its size based on load factors and average access counts. You can enable/disable this option through the menu. The initial mode of the table is not adaptive due to the homework requirement from the faculty.
 
