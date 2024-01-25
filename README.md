@@ -25,6 +25,10 @@ This codebase encompasses the implementation of a hash table data structure feat
 
 ### Hash Table Operations
 
+The conceptual class diagram is shown in the following image:
+
+![diagram](https://github.com/JovanMosurovic/Hash-Table/assets/128632553/74d7d69e-20f1-49c9-8786-09aa32c1b648)
+
 By the given instructions, next functions are implemented:
 
 | Function | Description |
@@ -62,6 +66,7 @@ The double hashing class is parameterized by the values of `p` and `q` and retur
 ```
 return_address = a + i · (q + (k mod p))
 ```
+
 ## Adaptive Hash Table
 The hash table has an adaptive mode, controlled by the user. When in adaptive mode, the table automatically adjusts its size based on load factors and average access counts. You can enable/disable this option through the menu. The initial mode of the table is not adaptive due to the homework requirement from the faculty.
 
