@@ -29,6 +29,10 @@ The conceptual class diagram is shown in the following image:
 
 ![diagram](https://github.com/JovanMosurovic/Hash-Table/assets/128632553/74d7d69e-20f1-49c9-8786-09aa32c1b648)
 
+Test
+![diagram](https://github.com/JovanMosurovic/Hash-Table/assets/128632553/919c50b2-c395-4a1f-8f1e-f8dbe45bc4ec)
+
+
 By the given instructions, next functions are implemented:
 
 | Function | Description |
