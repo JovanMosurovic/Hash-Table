@@ -7,7 +7,7 @@ This codebase encompasses the implementation of a hash table data structure feat
 
 > The main objective of this project was to gain hands-on experience with hash tables and specifically explore the implementation of operations like inserting and deleting elements, resolving collisions through double hashing and maintaining the table's efficiency.
 > 
-> This project was developed as the [third university assignment](instructions.pdf) for "Algorithms and Data Structures 2", University of Belgrade School of Electrical Engineering majoring Software Engineering. Please refer to the file for detailed assignment instructions.
+> This project was developed as the [third university assignment](instructions.pdf) for "Algorithms and Data Structures 2" at the University of Belgrade School of Electrical Engineering majoring in Software Engineering. Please refer to the file for detailed assignment instructions.
 
 ## Table of Contents
 
@@ -29,7 +29,7 @@ The conceptual class diagram is shown in the following image:
 
 ![diagram](https://github.com/JovanMosurovic/Hash-Table/assets/128632553/74d7d69e-20f1-49c9-8786-09aa32c1b648)
 
-By the given instructions, next functions are implemented:
+By the given instructions, these next functions are implemented:
 
 | Function | Description |
 |---|---|
@@ -58,7 +58,7 @@ Parameters:
 - `a`: The base address.
 - `i`: The attempt number of access.
 
-The method returns a new address where the key should be looked for (or the location where it is needed accommodate). The returned address **may be outside** the address range of the table. A hash table that uses this class should take care of it and reduce the returned address to the correct one range. Derived classes should specify how to determine the next address.
+This method returns a new address where the key should be looked for (or the location where it is needed to accommodate). The returned address **may be outside** the address range of the table. A hash table that uses this class should take care of it and reduce the returned address to the correct one range. These derived classes should specify how to determine the next address.
 
 ### Double hashing Class
 The double hashing class is parameterized by the values of `p` and `q` and returns the following value:
@@ -71,7 +71,7 @@ return_address = a + i · (q + (k mod p))
 The hash table has an adaptive mode, controlled by the user. When in adaptive mode, the table automatically adjusts its size based on load factors and average access counts. You can enable/disable this option through the menu. The initial mode of the table is not adaptive due to the homework requirement from the faculty.
 
 ## Performance Evaluation
-Performance evaluation of a hash table is performed by inserting given keys (in a specified range of values) into a given hash table, and then generating a specified number of keys of **pseudorandom** values and performing a search on them. After that, the results (average number of accesses in a **successful** search and calculated number of accesses in an **unsuccessful** search) are printed.<br />
+A performance evaluation of a hash table is performed by inserting the given keys (in a specified range of values) into a given hash table, and then generating a specified number of keys of **pseudorandom** values and performing a search on them. After that, the results (average number of accesses in a **successful** search and calculated number of accesses in an **unsuccessful** search) are printed.<br />
 
 The range in which random numbers are generated is determined so that it corresponds to the range of values of the keys inserted into the table (in this case these numbers are between minimum and maximum key in "[DZ3_Recnik_10K.txt](Files/DZ3_Recnik_10K.txt)" file.
 
