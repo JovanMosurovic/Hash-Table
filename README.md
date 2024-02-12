@@ -27,7 +27,8 @@ This codebase encompasses the implementation of a hash table data structure feat
 
 The conceptual class diagram is shown in the following image:
 
-![diagram](https://github.com/JovanMosurovic/Hash-Table/assets/128632553/74d7d69e-20f1-49c9-8786-09aa32c1b648)
+![diagram](https://github.com/JovanMosurovic/Hash-Table/assets/128632553/0fafe364-6dc8-430d-9e08-ad97121f63cf)
+
 
 By the given instructions, these next functions are implemented:
 
